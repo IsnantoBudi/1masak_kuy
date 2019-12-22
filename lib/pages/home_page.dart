@@ -43,10 +43,11 @@ class _HomePageState extends State<HomePage> {
               DrawerHeader(
                 child: Text('Welcome to Masak Kuy App'),
                 decoration: BoxDecoration(
-                  color: Colors.blue,
+                  color: Colors.indigo,
                 ),
               ),
               ListTile(
+                  leading: new Icon(Icons.home),
                 title: Text('HOME'),
                 onTap: () {
                   // Update the state of the app
@@ -56,6 +57,7 @@ class _HomePageState extends State<HomePage> {
                 },
               ),
               ListTile(
+                leading: new Icon(Icons.info_outline),
                 title: Text('TENTANG'),
                 onTap: () {
                   Navigator.push(
@@ -65,6 +67,7 @@ class _HomePageState extends State<HomePage> {
                 },
               ),
               ListTile(
+                  leading: new Icon(Icons.account_circle),
                 title: Text('LOGOUT'),
                 onTap: signOut
 

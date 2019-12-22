@@ -7,6 +7,14 @@ class Tentang extends StatelessWidget {
         title: new Center(child: new Text('Tentang Aplikasi')),
       ),
       body: Center(
+        child: Padding(
+          padding: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 0.0),
+          child: CircleAvatar(
+            backgroundColor: Colors.transparent,
+            radius: 90.0,
+            child: Image.asset('assets/masakkuy.png',),
+          ),
+        ),
       ),
     );
   }

@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
         title: 'Flutter login demo',
         debugShowCheckedModeBanner: false,
         theme: new ThemeData(
-          primarySwatch: Colors.blue,
+          primarySwatch: Colors.indigo,
         ),
         home: new RootPage(auth: new Auth()));
   }
