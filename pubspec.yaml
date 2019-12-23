@@ -22,4 +22,4 @@ flutter:
 
   uses-material-design: true
   assets:
-    - assets/masakkuy.png
+    - assets/logo.png

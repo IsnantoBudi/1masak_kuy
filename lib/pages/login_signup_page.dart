@@ -93,12 +93,20 @@ class _LoginSignupPageState extends State<LoginSignupPage> {
         appBar: new AppBar(
           title: new Center(child: new Text('Masak Kuy App')),
         ),
-        body: Stack(
-          children: <Widget>[
-            _showForm(),
-            _showCircularProgress(),
-          ],
-        ));
+        body: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(colors: [Colors.red, Colors.blue]),
+          ),
+          child: Center(
+            child: Stack(
+              children: <Widget>[
+                _showForm(),
+                _showCircularProgress(),
+              ],
+            ),
+        )
+        )
+    );
   }
 
   Widget _showCircularProgress() {
@@ -178,7 +186,7 @@ class _LoginSignupPageState extends State<LoginSignupPage> {
         child: CircleAvatar(
           backgroundColor: Colors.transparent,
           radius: 100.0,
-          child: Image.asset('assets/masakkuy.png',),
+          child: Image.asset('assets/logo.png',),
         ),
       ),
     );
